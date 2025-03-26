@@ -6,7 +6,54 @@
     <title>Document</title>
 </head>
 <body>
-    <header><h1>Contato</h1></header>
-    <main></main>
+    <header>
+        <h1>Contato</h1>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a><br></li>
+        <li><a href="Currículo.html">Currículo</a><br></li>
+        <li><a href="Especialidades.html">Especialidades</a><br></li>
+        <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Agende sua consulta</legend>
+                <label>Nome: </label>
+                <input nome="txtnome" id="txtnome" required autofocus><br>
+
+                <label>E-mail: </label>
+                <input type="email" name="txtemail" id="txtemail" required><br>
+
+                <label>Telefone: </label>
+                <input type="tel" name="txttel" id="txttel" required><br>
+
+                <label>Consultótio de Preferência: </label><br>
+                <select name="cons" id="cons">
+                    <option value="" hidden>Selecione um Consultório</option>
+                    <option value="C1">Consultório 1</option>
+                    <option value="C2">Consultório 2</option>
+                    <option value="C3">Consultório 3</option>
+                </select><br>
+                <label>Dia da consulta: </label><br>
+                <input type="date" name="dt" id="dt" required><br>
+
+                <label>Como chegou no nosso site?:</label><br>
+                <select name="como" id="como">
+                    <option value="" hidden>Selecione uma opção</option>
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Outros">Outros</option>
+                </select><br>
+                <label>Mensagem: </label><br>
+                <textarea rows="5" cols="40" name="msg" id="msg"></textarea><br>
+
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
